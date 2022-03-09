@@ -1,0 +1,73 @@
+.support
+    padding-top: 44px
+    padding-bottom: 43px
+    &_block
+        width: 1354px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width: 1335px)
+            grid-template-columns: repeat(1, 1fr)
+            width: 100%
+            place-items: center
+            & > img 
+                margin-bottom: 20px
+        @media screen and (max-width: 700px)
+            & > img
+                width: 90%
+                padding: 0 10px
+    &_text
+        background: url(../images/support_bg.png) 0 0 no-repeat
+        background-size: cover
+        width: 666px
+        @media screen and (max-width: 700px)
+            width: 87%
+            padding: 0 10px
+            .support_item 
+                padding: 100px 0
+                text-align: center
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+        @media screen and (max-width: 400px)
+            .support_item 
+                padding: 70px 0
+        @media screen and (max-width: 280px)
+            .support_item 
+                padding: 40px 0
+            
+    &_item
+        padding: 212px 127px 195px 60px
+        & > h2 
+            font-size: rem(53px)
+            color: white
+            line-height: 60px
+            margin-bottom: 71px
+            & > span 
+                color: #1B9097
+        & > a 
+            font-size: rem(17px)
+            line-height: 20px
+            color: $mainColor
+            padding: 20px 35px
+            background: white 
+            border-radius: 4px
+        @media screen and (max-width: 620px)
+            & > h2 
+                font-size: rem(40px)
+        @media screen and (max-width: 512px)
+            & > h2 
+                font-size: rem(30px)
+                line-height: 40px
+                margin-bottom: 30px
+            & > a 
+                font-size: rem(14px)
+                padding: 15px 30px
+        @media screen and (max-width: 280px)
+            & > a 
+                font-size: rem(10px)
+                padding: 7px 20px
+            & > h2 
+                font-size: rem(18px)
+                line-height: 30px

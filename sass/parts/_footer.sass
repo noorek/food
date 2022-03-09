@@ -1,0 +1,88 @@
+.footer
+    background: url(../images/footer_bg.png) 0 50% no-repeat
+    background-size: cover
+    padding-top: 102px
+    &_block
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid rgba(126, 130, 143, 0.09)
+        padding-bottom: 119px
+        @media screen and (max-width: 1220px)
+            width: 100%
+            padding: 0 20px
+        @media screen and (max-width: 865px)
+            flex-direction: column
+            align-items: center
+    &_item
+        display: flex
+        flex-direction: column 
+        & > h3 
+            font-size: rem(13px)
+            line-height: 20px
+            letter-spacing: 1.5px
+            color: #08090A
+            margin-bottom: 28px
+        & > a 
+            font-size: rem(15px)
+            line-height: 20px 
+            color: $secondaryColor
+            margin-bottom: 28px
+        @media screen and (max-width: 600px)
+            & > h3 
+                font-size: rem(11px)
+            & > a 
+                font-size: rem(12px)
+       
+    &_links 
+        display: grid
+        grid-template-columns: repeat(3, 1fr )
+        column-gap: 61px
+        @media screen and (max-width: 600px)
+            column-gap: 20px
+        @media screen and (max-width: 424px)
+            grid-template-columns: repeat(2, 1fr )
+        @media screen and (max-width: 280px)
+            margin-left: 20px
+    &_text 
+        & > img 
+            margin-bottom: 28px
+        & > h3 
+            font-size: rem(15px)
+            color: $secondaryColor
+            line-height: 27px
+            letter-spacing: 0.36px
+        @media screen and (max-width: 865px)
+            text-align: center
+            margin-bottom: 30px
+        
+.under_footer
+    padding-top: 70px
+    display: flex
+    justify-content: space-between
+    padding-bottom: 60px
+    &_text
+        font-size: rem(15px)
+        line-height: 20px
+        color: #353448
+        & > h3 
+            & > a 
+                color: $mainColor
+        @media screen and (max-width: 386px)
+            font-size: rem(12px)
+        @media screen and (max-width: 311px)
+            font-size: rem(10.7px)
+    &_links 
+        & > a
+            margin-left: 24px
+        & > a:first-child
+            margin-left: 0
+        @media screen and (max-width: 865px)
+            margin-top: -10px
+    @media screen and (max-width: 1220px)
+            width: 100%
+            padding: 70px 20px 60px 20px
+    @media screen and (max-width: 580px)
+        flex-direction: column
+        align-items: center
+        &_text 
+            margin-bottom: 30px

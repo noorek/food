@@ -1,0 +1,112 @@
+.heading 
+    align-items: center
+    justify-content: center
+    background: $mainColor
+    display: flex
+    padding: 14px 0
+    & > p 
+        color: rgba(255, 255, 255, 0.8)
+        font-size: rem(14px)
+        margin-right: 10px
+    & > a 
+        color: #ffffff
+        font-size: rem(14px)
+    @media screen and (max-width: 435px)
+        flex-direction: column
+        padding-left: 10px
+    @media screen and (max-width: 340px)
+        & > p 
+            font-size: rem(12px)
+        & > a 
+            font-size: rem(12px)
+    @media screen and (max-width: 301px)
+        & > p 
+            font-size: rem(11px)
+        & > a 
+            font-size: rem(11px)   
+.header_block
+    display: flex
+    justify-content: space-between
+    padding-top: 23px 
+    @media screen and (max-width: 450px)
+        .header_menu.active .header_item 
+            margin-right: 30px
+            margin-bottom: 30px
+            font-size: rem(18px)
+    @media screen and (max-width: 280px)
+        .header_menu.active .header_item 
+            margin-right: 40px
+            margin-bottom: 20px
+            font-size: rem(17px)
+    .hamburger 
+        display: none
+        position: relative
+        top: -15px    
+    .hamburger.active .hamburger_line:nth-child(1) 
+        transform: rotate(45deg) translate(8px, 7px)
+        background: white
+    .hamburger.active .hamburger_line:nth-child(2)
+        opacity: 0
+    .hamburger.active .hamburger_line:nth-child(3)
+        transform: rotate(-45deg) translate(8px, -7px)
+        background: white
+    .header_menu.active 
+        display: block
+        top: 0
+        position: fixed
+        right: 0
+        width: 50%
+        height: 100vh
+        background: #35b7bea9
+    .header_menu.active ul 
+        font-size: rem(20px)
+        height: 100vh
+        flex-direction: column
+        justify-content: center
+        padding-left: 10px
+    .header_menu.active .header_item 
+        margin-bottom: 40px
+    .header_menu.active .header_item:last-child
+        margin-bottom: 0
+    .header_menu.active a 
+        color: #fff
+    @media screen and (max-width: 1200px)
+        padding-left: 35px
+    @media screen and (max-width: 650px)
+        .header_menu
+            display: none
+        .hamburger 
+            display: flex
+            width: 40px
+            height: 40px
+            align-items: center
+            flex-direction: column
+            justify-content: space-evenly
+            margin-right: 30px
+            margin-top: 25px 
+        .hamburger_line 
+            display: inline-block
+            height: 3px
+            background: $mainColor
+            width: 70%
+            transition: all .3s
+    & > nav
+        & > ul
+            display: flex
+            align-items: center
+            & > li 
+                margin-left: 32px
+                & > a 
+                    color: #28224B
+                &:first-child a 
+                    margin-left: 0
+                    color: $mainColor
+            & > a 
+                & > img
+                    margin-left: 32px
+                    transform: translateY(-15%)
+.container
+    @media screen and (max-width: 1160px)
+        width: 100%
+.dn 
+    display: none

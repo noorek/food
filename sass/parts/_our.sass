@@ -1,0 +1,200 @@
+.our
+    background: url(../images/our.png) 0 0 no-repeat
+    background-size: cover
+    margin-top: 127px
+    padding-top: 150px
+    padding-bottom: 140px
+    @media screen and (max-width: 905px)
+        .container
+            width: 100%
+            padding: 0 5px
+    &_a
+        text-align: center
+        margin-top: 84px
+        & > a 
+            border-radius: 6px
+            font-size: rem(17px)
+            color: #FFFFFF
+            line-height: 20px
+            padding: 20px 35px
+            background: $mainColor
+        @media screen and (max-width: 600px)
+            margin-top: 50px
+        @media screen and (max-width: 415px)
+            & > a
+                font-size: rem(14px)
+                padding: 16px 30px
+        @media screen and (max-width: 310px)
+            & > a
+                font-size: rem(14px)
+                padding: 13px 25px
+    &_heading
+        text-align: center
+        & > h2
+            letter-spacing: 1.65px
+            font-size: rem(50px)
+            color: $mainColor
+            margin-bottom: 26px
+        & > p 
+            letter-spacing: 0.36px
+            font-size: rem(16px)
+            color: #546285
+            margin-bottom: 50px
+            & > span 
+                color: $mainColor
+        @media screen and (max-width: 480px)
+            & > h2 
+                font-size: rem(40px)
+            & > p 
+                font-size: rem(12.3px)
+        @media screen and (max-width: 480px)
+            text-align: none
+            & > p
+                margin-bottom: 30px
+                font-size: rem(10px)
+    &_button
+        text-align: center
+        margin-right: 30px
+        margin-bottom: 40px
+        & > button:first-child
+            font-size: rem(14px)
+        & > button:last-child
+            margin-right: 0
+        & > button 
+            cursor: pointer
+            font-size: rem(15px)
+            border: 1px solid rgba(97, 114, 131, 0.2)
+            box-sizing: border-box
+            border-radius: 6px
+            padding: 16px 46px
+        & > button:hover 
+            background: $mainColor
+            color: white
+        @media screen and (max-width: 570px)
+            margin-left: 20px
+            margin-bottom: 20px
+            .sides
+                margin-left: 0px
+            & > button:first-child
+                font-size: rem(12px)
+            & > button 
+                font-size: rem(12px)
+                padding: 12px 35px
+        @media screen and (max-width: 556px)
+            .drinks
+                margin-left: 0px
+                
+        @media screen and (max-width: 480px)
+            & > button:first-child
+                font-size: rem(11px)
+            & > button 
+                font-size: rem(11px)
+                padding: 10px 25px
+        @media screen and (max-width: 369px)
+            & > button:first-child
+                font-size: rem(10px)
+            & > button 
+                font-size: rem(10px)
+                padding: 10px 22px
+            margin-left: 30px
+        @media screen and (max-width: 293px)
+            display: flex
+            margin-right: 3px
+            margin-left: 5px
+            .sides
+                margin-left: 0px
+            margin-bottom: 10px 
+            & > button:first-child
+                font-size: rem(8px)
+            & > button 
+                font-size: rem(8px)
+                padding: 7px 20px
+    &_block 
+        @media screen and (max-width: 905px)
+            padding: 0 20px
+    &_box
+        display: grid 
+        grid-template-columns: repeat(2, 1fr )
+        column-gap: 20px
+        row-gap: 20px
+        @media screen and (max-width: 905px)
+            grid-template-columns: repeat(1, 1fr)
+    &_slide
+        display: flex
+        background: #FFFFFF
+        border: 1px solid rgba(53, 184, 190, 0.15)
+        box-sizing: border-box
+        border-radius: 6px
+        padding: 40px 26px
+        & > img
+            margin-right: 30px
+        @media screen and (max-width: 905px)
+            flex-direction: column
+            align-items: center
+            text-align: center
+            & > img
+                margin-bottom: 20px
+                width: 150px
+                margin-right: 0
+    &_text
+        & > p 
+            color: #546285
+            letter-spacing: 0.32px
+            margin-bottom: 8px
+        & > button 
+            letter-spacing: 0.36px
+            padding: 9px 26px
+            font-size: rem(16px)
+            margin-right: 8px
+            line-height: 27px
+            background: #FAFAFA
+            border: 1px solid #DDDDDD
+            box-sizing: border-box
+            border-radius: 6px
+            cursor: pointer
+        & > button:last-child
+            margin-right: 0
+            background: $mainColor
+            padding: 8px 12px 10px 10px
+        @media screen and (max-width: 415px)
+            & > p 
+                font-size: rem(11px)
+            & > button 
+                padding: 5px 18px
+                font-size: rem(13px)
+            & > button:last-child
+                padding: 5px 18px
+                font-size: rem(13px)
+        @media screen and (max-width: 310px)
+            & > p 
+                font-size: rem(10.7px)
+                margin-bottom: 10px
+            & > button 
+                padding: 5px 12px
+                font-size: rem(10px)
+            & > button:last-child
+                padding: 5px 12px
+                font-size: rem(10px)
+.slide_heading
+    display: flex
+    justify-content: space-between
+    margin-bottom: 16px
+    & > h2 
+        font-size: rem(18px)
+        color: #08090A
+        letter-spacing: 0.6px
+    & > p 
+        font-size: rem(15px)
+        color: $mainColor
+    @media screen and (max-width: 415px)
+        & > h2 
+            font-size: rem(15px)
+        & > p 
+            font-size: rem(13px)
+    @media screen and (max-width: 310px)
+        & > h2 
+            font-size: rem(13px)
+        & > p 
+            font-size: rem(12px)
+    
+            
